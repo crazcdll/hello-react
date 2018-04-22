@@ -5,6 +5,7 @@ import PropTypes from './components/PropTypes'
 import Hoc from './components/Hoc'
 import RenderProp from './components/RenderProps'
 import ComponentDidCatched from './components/ComponentDidCatched'
+import Context from './components/Context'
 
 class App extends Component {
   render () {
@@ -14,6 +15,7 @@ class App extends Component {
         <Hoc />
         <RenderProp />
         <ComponentDidCatched />
+        <Context />
         { /*<header className="App-header">*/ }
         { /*<img src={logo} className="App-logo" alt="logo"/>*/ }
         { /*<h1 className="App-title">Welcome to React</h1>*/ }
