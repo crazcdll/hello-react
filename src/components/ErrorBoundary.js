@@ -24,11 +24,7 @@ class ErrorBoundary extends Component {
 
   render () {
     if (this.state.hasError) {
-      return <div>
-        Oops, error occured <br/>
-        { this.state.error && this.state.error.toString()} <br/>
-        {this.state.errorInfo.componentStack} <br/>
-        </div>
+      return <div>{ this.props.render(this.state.error, this.state.errorInfo) }</div>
     }
     return this.props.children
   }

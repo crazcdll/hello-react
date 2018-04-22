@@ -23,7 +23,7 @@ class ComponentDidCatched extends Component {
     return (
       <div>
         <h1>Hello zcdll</h1>
-        <ErrorBoundary>D
+        <ErrorBoundary render={ (error, errorInfo) => <p>Error: { error.toString() }</p> }>
           <Broken />
         </ErrorBoundary>
         <div>Counter: { this.state.counter }</div>
