@@ -23,14 +23,23 @@ class Mouse extends React.Component {
   }
 }
 
+const Position = ({x, y}) => {
+  return (
+    <h1>The mouse position is ({ x }, { y })</h1>
+  )
+}
+
+const Position1 = ({x, y}) => {
+  return (
+    <p>The mouse position is ({ x }, { y })</p>
+  )
+}
+
 const App = () => {
   return (
     <div style={ {height: '100%'} }>
-      <Mouse render={ ({x, y}) => {
-        return (
-          <h1>The mouse position is ({ x }, { y })</h1>
-        )
-      } } />
+      <Mouse render={ (props) => <Position { ...props } /> } />
+      <Mouse render={ (props) => <Position1 { ...props } /> } />
     </div>
   )
 }
