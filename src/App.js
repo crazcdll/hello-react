@@ -6,6 +6,7 @@ import Hoc from './components/Hoc'
 import RenderProp from './components/RenderProps'
 import ComponentDidCatched from './components/ComponentDidCatched'
 import Context from './components/Context'
+import LocaleSwitcher from './components/LocalSwitcher'
 
 class App extends Component {
   render () {
@@ -16,6 +17,7 @@ class App extends Component {
         <RenderProp />
         <ComponentDidCatched />
         <Context />
+        <LocaleSwitcher />
         { /*<header className="App-header">*/ }
         { /*<img src={logo} className="App-logo" alt="logo"/>*/ }
         { /*<h1 className="App-title">Welcome to React</h1>*/ }
